@@ -1,0 +1,123 @@
+@import "./typography.css";
+
+* {
+    font-family: 'gotham', sans-serif;
+}
+
+header {
+    height: 10vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3498bd;
+}
+
+header image {
+    height: 8ch;
+    width: auto;
+
+}
+
+nav {
+    margin: 0;
+    height: 100%;
+}
+
+main {
+    min-height: 80vh;
+}
+
+main image {
+    height: 8vh;
+    width: auto;
+}
+
+footer {
+    height: 10vh;
+    background-color: #86bd24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+}
+
+.menu {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    background-color: #00000000;
+    align-items: center;
+    height: 100%;
+}
+
+.menu li {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 100%;
+
+}
+
+.menu li:hover {
+    background-color: #86bd24;
+    cursor: pointer;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu li:hover a {
+    color: #ffffff;
+}
+
+.presentation {
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 20vh;
+    color: #000000;
+    padding: 10px 50% 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.carte {
+    background-image: url('../images/carte_brest.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    height: 60vh;
+    padding: 10px 50% 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498bd;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.5;
+}
+
+.btn:hover {
+    background-color: #ff0000;
+    transition: background-color 0.5;
+
+}
