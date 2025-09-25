@@ -13,53 +13,89 @@
     <header>
 
         <img src="./images/image_logo_afpa.png" alt="Logo image_logo_afpa">
-        <ul class='menu'>
-
-            <li><a href="accueil.html">Accueil</a> </li>
-            <li><a href="formation.html">formation</a></li>
-            <li><a href="temoignages.html">témoignages</a></li>
-            <li><a href="nos_references.html">nos references</a> </li>
-            <li><a href="nous_contacter.html">nous contacter</a> </li>
-        </ul>
+        <input type="checkbox" id="toggle">
+        <nav>
+            <label for="toggle"></label>
+            <ul class='menu'>
+                <li><a href="accueil.html">Accueil</a> </li>
+                <li><a href="formation.html">formation</a></li>
+                <li><a href="temoignages.html">témoignages</a></li>
+                <li><a href="nos_references.html">nos references</a> </li>
+                <li><a href="nous_contacter.html">nous contacter</a> </li>
+            </ul>
+        </nav>
     </header>
 
-
     <main>
+
+        <h1 class="titre_formation">Contactez-nous !</h1>
+
         <form method="get" action="file:///C:/Document_pour_c/Figma/accueil.html">
-            <p>
-                Entrez votre nom
-                <input type="text" name="le_nom" />
-            </p>
-            <p>
-                Entrez votre prenom
-                <input type="text" name="le_prenom" />
-            </p>
-            <p>
-                Entrez votre adresse mail
-                <input type="text" name="adresse_mmail" /> <!-- HTML5 ? -->
-            </p>
-            <p> Entrez votre numéro de télphone
-                <input type="number" name="numero_de_telephone" />
-            <p><i>Votre situation ?</i></p>
-            <ol>
-                <li><input type="checkbox" name="micro1" value="demandeur_emploi" />demandeur emploi</li>
-                <li><input type="checkbox" name="micro2" value="salarie_transition_pro" />salarie en transition pro</li>
-                <li><input type="checkbox" name="micro3" value="autre" />autre
+
+
+
+            <label for="nom">Entrez votre nom</label>
+            <input type="text" id="nom" name="le_nom" />
+
+
+
+            <label for="prenom">Entrez votre prenom</label>
+            <input type="text" id="prenom" name="le_prenom" />
+
+
+
+            <label for="adresse">Entrez votre adresse mail</label>
+            <input type="email" id="adresse" name="adresse_mail" />
+
+
+            <label for="number">Entrez votre numéro de télphone</label>
+            <input type="text" id="number" name="numero_de_telephone" />
+
+
+
+
+
+            <i>Votre situation ?</i>
+
+
+            <ul>
+                <li><input type="checkbox" name="modalitées" value="demandeur_emploi" />demandeur emploi</li>
+                <li><input type="checkbox" name="modalitées" value="salarie_transition_pro" />salarie en
+                    transition
+                    pro
                 </li>
-            </ol>
-            <p><i>Vos modalitées d'apprentissage ?</i></p>
-            <ol>
-                <li><input type="radio" name="presentiel" value="presentiel" />
+                <li><input type="checkbox" name="modalitées" value="autre" />autre
+                </li>
+            </ul>
+            <i>Vos modalitées d'apprentissage ?</i></p>
+            <ul>
+                <li><input type="radio" name="modalitées" value="presentiel" />
                     en centre de formation</li>
-                <li><input type="radio" name="a_distance" value="distance" /> 100% a distance</li>
-                <li><input type="radio" name="alternance" value="alternance" /> en contrat
+                <li><input type="radio" id="distance" name="modalitées" value="distance">100% a distance</li>
+                <li><input type="radio" name="modalitées" value="alternance" /> en contrat
                     d'alternance avec
                     l'entreprise
                 </li>
-            </ol>
+            </ul> <select name="déroulant" id="formulaire">
+                <option value="">Auvergne-Rhône-Alpes</option>
+                <option value="">Bourgogne-Franche-Comté</option>
+                <option value="">Bretagne</option>
+                <option value="">Centre-Val de loire</option>
+                <option value="">Corse</option>
+                <option value="">Grand-Est</option>
+                <option value="">Guadeloupe</option>
+                <option value="">Guyane</option>
+                <option value="">La Réunion</option>
+                <option value="">Pays de la loire</option>
+                <option value="">Martinique</option>
+            </select>
 
-            <p><input type="submit" value="validez" /></p>
+
+
+
+            <input type="submit" value="validez" />
         </form>
+
     </main>
     <footer>
         Afpa années 2025-2026
